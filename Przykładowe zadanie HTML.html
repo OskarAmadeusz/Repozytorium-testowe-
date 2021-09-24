@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+     <head>
+          <title>Zadanie 7.3</title>
+          <meta charset="utf-8">
+          <script>
+              function red(){
+                  var a = document.getElementById("rozmiar").value;
+                  var b = document.getElementById("wybor").value;
+                  if(b ==="kursywa"){
+                  document.getElementById("wynik").style="color:red; font-size:"+a+"%;font-style: italic;";
+                  }
+                  else
+                  {
+                  document.getElementById("wynik").style="color:red; font-size:"+a+"%;";    
+                  }
+              }
+               function blue(){
+                  var a = document.getElementById("rozmiar").value;
+                  var b = document.getElementById("wybor").value;
+                  if(b ==="kursywa"){
+                  document.getElementById("wynik").style="color:blue; font-size:"+a+"%;font-style: italic;";
+                  }
+                  else
+                  {
+                  document.getElementById("wynik").style="color:blue; font-size:"+a+"%;";    
+                  }
+              }
+              function green(){
+                  var a = document.getElementById("rozmiar").value;
+                  var b = document.getElementById("wybor").value;
+                  if(b ==="kursywa"){
+                  document.getElementById("wynik").style="color:green; font-size:"+a+"%;font-style: italic;";
+                  }
+                  else
+                  {
+                  document.getElementById("wynik").style="color:green; font-size:"+a+"%;";    
+                  }
+              } 
+         
+           
+         </script>
+    </head>
+    <body>
+         <p>Podaj rozmiar tekstu w procentach<input type="number" id="rozmiar" value="">%</p>
+         <p>
+             <select id="wybor">
+                 <option>prosty</option>
+                 <option>kursywa</option>
+             </select>
+        </p>
+        <p>Jakim kolorem sformatować tekst? Wybierz przycisk.
+        </p>
+        <input type="button" id="red" value="RED" style="background-color: red" onclick="red()">
+        <input type="button" id="green" value="GREEN" style="background-color: green" onclick="green()">
+        <input type="button" id="blue" value="BLUE" style="background-color: blue" onclick="blue()">
+        <p id="wynik">To jest przykład tekstu</p>
+    
+    </body>
+</html>
